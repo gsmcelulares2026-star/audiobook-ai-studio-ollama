@@ -1,23 +1,23 @@
-# 📚 Audiobook AI Studio - Ollama Edition
+# 📚 Audiobook AI Studio - Edição Ollama
 
-Transform PDFs into interactive audiobooks using **local AI** with Ollama. No cloud APIs required. Pure local processing.
+Transforme PDFs em audiolivros interativos usando **IA local** com Ollama. Sem APIs em nuvem. Processamento 100% local.
 
-## ✨ Features
+## ✨ Características
 
-- **PDF to Audiobook**: Upload a PDF and automatically structure it into chapters
-- **Local AI Processing**: Uses Ollama (llama2 by default) for intelligent text structuring
-- **Local Text-to-Speech**: Generate audio locally using system TTS
-- **Beautiful Web Interface**: Modern, responsive UI for managing and playing audiobooks
-- **Zero Cloud Dependencies**: Everything runs locally on your machine
+- **PDF para Audiobook**: Envie um PDF e estruture-o automaticamente em capítulos
+- **Processamento com IA Local**: Usa Ollama (llama2 por padrão) para estruturação inteligente
+- **Síntese de Voz Local**: Gere áudio localmente usando TTS do sistema
+- **Interface Web Moderna**: UI responsiva e intuitiva para gerenciar e reproduzir audiolivros
+- **Zero Dependências de Nuvem**: Tudo roda localmente na sua máquina
 
-## 🛠️ Prerequisites
+## 🛠️ Pré-requisitos
 
 - **Node.js** 18+ 
-- **Ollama** installed and running locally ([Download](https://ollama.ai))
+- **Ollama** instalado e rodando localmente ([Baixar](https://ollama.ai))
 
-## 🚀 Quick Start
+## 🚀 Início Rápido
 
-### 1. Clone and setup
+### 1. Clonar e configurar
 
 ```bash
 git clone https://github.com/gsmcelulares2026-star/audiobook-ai-studio-ollama.git
@@ -25,86 +25,86 @@ cd audiobook-ai-studio-ollama
 npm install
 ```
 
-### 2. Start Ollama
+### 2. Iniciar Ollama
 
-In one terminal, start the Ollama service:
+Em um terminal, inicie o serviço Ollama:
 
 ```bash
 ollama serve
 ```
 
-### 3. Pull a model (first time only)
+### 3. Baixar um modelo (primeira vez apenas)
 
-In another terminal:
+Em outro terminal:
 
 ```bash
 ollama pull llama2
 ```
 
-### 4. Run the app
+### 4. Rodar a aplicação
 
 ```bash
 npm run dev
 ```
 
-The app will be available at `http://localhost:3000`
+A aplicação estará disponível em `http://localhost:3000`
 
-## ⚙️ Configuration
+## ⚙️ Configuração
 
-### Environment Variables
+### Variáveis de Ambiente
 
-Create or edit `.env` to customize:
+Crie ou edite `.env` para customizar:
 
 ```env
-OLLAMA_HOST=127.0.0.1        # Ollama server host
-OLLAMA_PORT=11434            # Ollama server port
-OLLAMA_MODEL=llama2          # Model to use (e.g., mistral, neural-chat)
+OLLAMA_HOST=127.0.0.1        # Host do servidor Ollama
+OLLAMA_PORT=11434            # Porta do servidor Ollama
+OLLAMA_MODEL=llama2          # Modelo a usar (ex: mistral, neural-chat)
 ```
 
-## 📖 How It Works
+## 📖 Como Funciona
 
-1. **Upload PDF** → Extract text from your PDF file
-2. **AI Structuring** → Ollama analyzes text and creates chapters
-3. **Generate Audio** → Local TTS converts chapters to audio
-4. **Play & Manage** → Listen, adjust content, and export
+1. **Enviar PDF** → Extrai texto do seu arquivo PDF
+2. **Estruturação com IA** → Ollama analisa o texto e cria capítulos
+3. **Gerar Áudio** → TTS local converte capítulos em áudio
+4. **Reproduzir e Gerenciar** → Ouça, edite conteúdo e exporte
 
-## 🎨 UI Features
+## 🎨 Funcionalidades da Interface
 
-- Real-time chapter navigation
-- Audio playback controls (play, pause, speed control)
-- Chapter editing
-- Audio export
-- Voice selection (system-dependent)
+- Navegação de capítulos em tempo real
+- Controles de reprodução (play, pause, controle de velocidade)
+- Edição de capítulos
+- Exportação de áudio
+- Seleção de voz (dependente do sistema)
 
-## 🔧 Commands
+## 🔧 Comandos
 
 ```bash
-npm run dev       # Start development server
-npm run build     # Build for production
-npm run preview   # Preview production build
-npm run lint      # Check TypeScript
-npm run clean     # Clean build artifacts
+npm run dev       # Inicia servidor de desenvolvimento
+npm run build     # Build para produção
+npm run preview   # Pré-visualiza build de produção
+npm run lint      # Verifica TypeScript
+npm run clean     # Limpa artefatos de build
 ```
 
-## 📦 Tech Stack
+## 📦 Stack Tecnológico
 
 - **Frontend**: React 19, Vite, Tailwind CSS, Motion
 - **Backend**: Express, Node.js
-- **AI**: Ollama (local inference)
-- **PDF Processing**: pdf-parse
-- **TTS**: System text-to-speech (`say` package)
+- **IA**: Ollama (inferência local)
+- **Processamento de PDF**: pdf-parse
+- **TTS**: Text-to-speech do sistema (pacote `say`)
 
-## 🌐 Deployment
+## 🌐 Deploy
 
-This project is designed to run locally. For deployment options, consider:
-- Docker containerization
-- Self-hosted VPS
-- Local network serving
+Este projeto foi projetado para rodar localmente. Para opções de deploy, considere:
+- Containerização com Docker
+- VPS auto-hospedado
+- Servindo em rede local
 
-## 📝 License
+## 📝 Licença
 
 MIT
 
-## 🤝 Contributing
+## 🤝 Contribuindo
 
-Contributions welcome! Feel free to open issues and PRs.
+Contribuições são bem-vindas! Sinta-se livre para abrir issues e PRs.
