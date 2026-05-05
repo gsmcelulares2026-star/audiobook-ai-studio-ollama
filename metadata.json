@@ -1,0 +1,6 @@
+{
+  "name": "PDF2Audio AI",
+  "description": "Convert PDFs into high-quality intelligent audiobooks with AI cleaning and structuring.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["AI Content Generation"]
+}
